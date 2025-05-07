@@ -144,9 +144,16 @@ p {
     position: relative; 
 }
 .sidebar.collapsed { 
-    width: 100%; 
+    width: 60px; 
+    overflow: hidden;
+}
+
+.sidebar.collapsed .profile,
+.sidebar.collapsed .user-name,
+.sidebar.collapsed .user-email,
+.sidebar.collapsed .nav-item {
+    display: none; 
 }
 .main-content { 
     padding: 15px;
-}
 }
