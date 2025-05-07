@@ -1,33 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css"><link>
+    <title>Website dengan Sidebar</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container"> 
-        <!--sidebar-->
+    <div class="container">
+        <!--Sidebar-->
         <aside class="sidebar">
             <div class="profile"> 
                 <img src="images/profile.png" alt="profile" class="profile-img">
                 <h3 class="user-name"> User Name</h3>
-                <p class="user-email">user@email.com</p>
+                <p class="user-email">User@mail.com</p>
             </div>
-
-            <nav class="nav"> 
+            <nav class="nav">
                 <ul> 
-                    <li><a href="Dashboard">Dashboard</a></li>
-                    <li><a href="Reports">Reports</a></li>
-                    <li><a href="Rewards">Rewards</a></li>
-                    <li><a href="Messages">Messages</a></li>
-                    <li><a href="Settings">Settings</a></li>
+                    <li><button class="nav-item" id="dashboard-btn">Dashboard</button></li>
+                    <li><button class="nav-item" id="reports-btn">Reports</button></li>
+                    <li><button class="nav-item" id="rewards-btn">Rewards</button></li>
+                    <li><button class="nav-item" id="messages-btn">Messages</button></li>
+                    <li><button class="nav-item" id="settings-btn">Settings</button></li>
+                    <li><button class="nav-item" id="logout-btn">logout</button></li>
                 </ul>
             </nav>
-            <button class="logout-btn">Logout</button>
+            <button class="collapse-btn" onclick="toogleSidebar()">☰</button>
         </aside>
     </div>
-    
 </body>
 </html>
